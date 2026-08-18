@@ -1,0 +1,130 @@
+{
+  "CTk": {
+    "fg_color": ["#e0e5ec", "#242833"]
+  },
+  "CTkToplevel": {
+    "fg_color": ["#e0e5ec", "#242833"]
+  },
+  "CTkFont": {
+    "family": "default_font_UI",
+    "size": 13,
+    "weight": "normal"
+  },
+  "CTkFrame": {
+    "fg_color": ["#e0e5ec", "#242833"],
+    "top_fg_color": ["#e0e5ec", "#242833"],
+    "corner_radius": 20,
+    "border_width": 0,
+    "border_color": ["#e0e5ec", "#242833"]
+  },
+  "CTkButton": {
+    "fg_color": ["#dfe4ec", "#2f3440"],
+    "hover_color": ["#cfd6e2", "#3a4150"],
+    "text_color": ["#5a6b85", "#e8ecf5"],
+    "text_color_disabled": ["#9aa7bd", "#8a93a8"],
+    "border_width": 0,
+    "border_color": ["#dfe4ec", "#2f3440"],
+    "corner_radius": 16,
+    "font": ["default_font_UI", 13]
+  },
+  "CTkEntry": {
+    "fg_color": ["#e0e5ec", "#2a2e39"],
+    "border_color": ["#c7d0dd", "#414858"],
+    "text_color": ["#3a4a63", "#e8ecf5"],
+    "placeholder_text_color": ["#9aa7bd", "#8a93a8"],
+    "border_width": 1,
+    "corner_radius": 14
+  },
+  "CTkLabel": {
+    "text_color": ["#3a4a63", "#e8ecf5"],
+    "fg_color": "transparent",
+    "corner_radius": 0,
+    "font": ["default_font_UI", 13]
+  },
+  "CTkScrollableFrame": {
+    "fg_color": ["#e0e5ec", "#242833"],
+    "label_fg_color": ["#d7dde7", "#2f3440"],
+    "corner_radius": 20,
+    "border_width": 0,
+    "border_color": ["#e0e5ec", "#242833"],
+    "scrollbar_button_color": ["#c7d0dd", "#414858"],
+    "scrollbar_button_hover_color": ["#b0bccf", "#4d5566"]
+  },
+  "CTkTextbox": {
+    "fg_color": ["#e0e5ec", "#2a2e39"],
+    "text_color": ["#3a4a63", "#e8ecf5"],
+    "border_color": ["#c7d0dd", "#414858"],
+    "border_width": 1,
+    "corner_radius": 14,
+    "scrollbar_button_color": ["#c7d0dd", "#414858"],
+    "scrollbar_button_hover_color": ["#b0bccf", "#4d5566"]
+  },
+  "CTkSwitch": {
+    "fg_color": ["#d0d8e3", "#3a4150"],
+    "button_color": ["#ffffff", "#e8ecf5"],
+    "progress_color": ["#6f9bf2", "#6f9bf2"],
+    "button_hover_color": ["#f2f4f8", "#ffffff"],
+    "border_color": ["#d0d8e3", "#3a4150"],
+    "corner_radius": 16,
+    "text_color": ["#3a4a63", "#e8ecf5"]
+  },
+  "CTkSlider": {
+    "fg_color": ["#d0d8e3", "#3a4150"],
+    "button_color": ["#6f9bf2", "#6f9bf2"],
+    "button_hover_color": ["#5a8aed", "#5a8aed"],
+    "progress_color": ["#6f9bf2", "#6f9bf2"],
+    "corner_radius": 12,
+    "button_corner_radius": 10,
+    "border_width": 0,
+    "button_length": 16
+  },
+  "CTkCheckBox": {
+    "fg_color": ["#6f9bf2", "#6f9bf2"],
+    "hover_color": ["#5a8aed", "#5a8aed"],
+    "text_color": ["#3a4a63", "#e8ecf5"],
+    "text_color_disabled": ["#9aa7bd", "#8a93a8"],
+    "border_color": ["#aeb9cc", "#5b6374"],
+    "checkmark_color": ["#ffffff", "#ffffff"],
+    "corner_radius": 6,
+    "border_width": 1
+  },
+  "CTkOptionMenu": {
+    "fg_color": ["#dfe4ec", "#2f3440"],
+    "hover_color": ["#cfd6e2", "#3a4150"],
+    "button_color": ["#dfe4ec", "#2f3440"],
+    "button_hover_color": ["#cfd6e2", "#3a4150"],
+    "text_color": ["#3a4a63", "#e8ecf5"],
+    "text_color_disabled": ["#9aa7bd", "#8a93a8"],
+    "border_width": 0,
+    "border_color": ["#dfe4ec", "#2f3440"],
+    "corner_radius": 14,
+    "dropdown_fg_color": ["#dfe4ec", "#2f3440"],
+    "dropdown_hover_color": ["#cfd6e2", "#3a4150"],
+    "dropdown_text_color": ["#3a4a63", "#e8ecf5"],
+    "dropdown_text_color_disabled": ["#9aa7bd", "#8a93a8"],
+    "font": ["default_font_UI", 13],
+    "dropdown_font": ["default_font_UI", 13]
+  },
+  "CTkProgressBar": {
+    "fg_color": ["#d0d8e3", "#3a4150"],
+    "progress_color": ["#6f9bf2", "#6f9bf2"],
+    "border_color": ["#d0d8e3", "#3a4150"],
+    "border_width": 0,
+    "corner_radius": 6
+  },
+  "CTkScrollbar": {
+    "fg_color": ["#e0e5ec", "#242833"],
+    "button_color": ["#c7d0dd", "#414858"],
+    "button_hover_color": ["#b0bccf", "#4d5566"],
+    "corner_radius": 8,
+    "border_spacing": 0
+  },
+  "DropdownMenu": {
+    "fg_color": ["#e0e5ec", "#2f3440"],
+    "hover_color": ["#cfd6e2", "#3a4150"],
+    "text_color": ["#3a4a63", "#e8ecf5"],
+    "border_color": ["#c7d0dd", "#414858"],
+    "corner_radius": 12,
+    "font": ["default_font_UI", 13]
+  }
+}

@@ -1,0 +1,12 @@
+cryptography>=42.0.0
+customtkinter>=5.2.2
+pyinstaller>=6.0.0
+winrt-runtime>=3.0.0
+winrt-Windows.Foundation>=3.0.0
+winrt-Windows.Security.Credentials>=3.0.0
+winrt-Windows.Security.Credentials.UI>=3.0.0
+numpy>=1.26.0
+opencv-python>=4.9.0
+onnxruntime>=1.18.0
+insightface>=0.7.3
+pillow>=10.0.0
