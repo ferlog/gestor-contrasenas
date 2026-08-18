@@ -19,7 +19,7 @@ Gestor de contraseñas de escritorio para **Windows 10/11** con interfaz neumór
 - Windows 10 u 11.
 - Python 3.10+ (solo para desarrollar/compilar).
 - Para biometría de Windows Hello: configúrala en *Configuración → Cuentas → Opciones de inicio de sesión*.
-- Para el reconocimiento facial independiente: webcam. El modelo (~281 MB) se descarga solo la primera vez.
+- Para el reconocimiento facial independiente: webcam. Los modelos de InsightFace (buffalo_l) se incluyen en el repositorio (`gestor_contrasenas\models`) y se empaquetan en el ejecutable, por lo que funcionan sin conexión.
 
 ## Cómo ejecutar desde el código
 
@@ -34,7 +34,7 @@ python main.py
 powershell -ExecutionPolicy Bypass -File build.ps1
 ```
 
-Genera `dist\GestorContrasenas.exe` (con icono). La primera ejecución extrae el ejecutable (~25 s) y descarga el modelo facial si aún no existe.
+Genera `dist\GestorContrasenas.exe` (con icono). Los modelos faciales ya están empaquetados, así que no necesita descargar nada. La primera ejecución tarda ~25 s en extraer el ejecutable.
 
 ## Seguridad
 

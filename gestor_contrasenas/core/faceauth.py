@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import threading
 import time
 
@@ -69,10 +70,32 @@ def _get_app():
     if _app is None:
         with _lock:
             if _app is None:
-                app = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"])
+                root = _models_root()
+                model_dir = os.path.join(root, "models", "buffalo_l")
+                # Si el modelo está empaquetado o en la carpeta del proyecto,
+                # se carga desde ahí (funciona offline). Si no existe, se usa
+                # el comportamiento por defecto de InsightFace (auto-descarga).
+                app = FaceAnalysis(
+                    name="buffalo_l",
+                    root=root if os.path.isdir(model_dir) else None,
+                    providers=["CPUExecutionProvider"],
+                )
                 app.prepare(ctx_id=0, det_size=_DET_SIZE)
                 _app = app
     return _app
+
+
+def _models_root() -> str:
+    """Devuelve la carpeta base donde buscar los modelos.
+
+    - Ejecutable (PyInstaller): el directorio temporal descomprimido (_MEIPASS),
+      donde se empaqueta la carpeta ``models`` mediante ``--add-data``.
+    - Modo código: la carpeta del paquete ``gestor_contrasenas``.
+    """
+    base = getattr(sys, "_MEIPASS", None)
+    if base is None:
+        base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    return base
 
 
 def device_available() -> bool:
